@@ -13,6 +13,9 @@
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
@@ -57,7 +60,7 @@
             padding: 0 20px;
         }
         
-        /* HEADER */
+        /* HEADER - TAMANHO DO LOGO CORRIGIDO */
         header {
             background: var(--white);
             box-shadow: 0 2px 20px rgba(0,0,0,0.05);
@@ -83,8 +86,8 @@
         
         .logo-icon {
             background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-dark));
-            width: 48px;
-            height: 48px;
+            width: 50px;
+            height: 50px;
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -101,17 +104,18 @@
         .logo-main {
             font-family: 'Poppins', sans-serif;
             font-weight: 800;
-            font-size: 24px;
+            font-size: 26px;
             color: var(--dark-blue);
             line-height: 1;
         }
         
         .logo-sub {
-            font-size: 11px;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 700;
             color: var(--whatsapp-green);
-            letter-spacing: 1px;
-            margin-top: 3px;
+            letter-spacing: 1.2px;
+            margin-top: 4px;
+            text-transform: uppercase;
         }
         
         /* NAVEGAÇÃO */
@@ -218,6 +222,163 @@
             flex-wrap: wrap;
         }
         
+        /* SEÇÃO "COMO FUNCIONA" RESTAURADA */
+        .how-it-works {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .how-it-works h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--dark-blue);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .how-it-works-subtitle {
+            font-size: 18px;
+            color: var(--medium-gray);
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+        
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 16px;
+            background: #f8fafc;
+            border: 1px solid var(--light-gray);
+            transition: transform 0.3s;
+        }
+        
+        .step:hover {
+            transform: translateY(-10px);
+        }
+        
+        .step-icon {
+            font-size: 48px;
+            color: var(--whatsapp-green);
+            margin-bottom: 20px;
+        }
+        
+        .step h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+        
+        /* DEMONSTRAÇÃO DO WHATSAPP */
+        .whatsapp-demo {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border: 1px solid var(--light-gray);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .demo-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .demo-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .demo-title h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            color: var(--dark-blue);
+            margin-bottom: 5px;
+        }
+        
+        .demo-title p {
+            color: var(--medium-gray);
+            font-size: 14px;
+        }
+        
+        .demo-messages {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .message {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            max-width: 80%;
+        }
+        
+        .message.bot {
+            align-self: flex-start;
+        }
+        
+        .message.user {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+        }
+        
+        .message-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--medium-gray);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .message.user .message-avatar {
+            background: var(--whatsapp-green);
+            color: white;
+        }
+        
+        .message-content {
+            background: var(--light-gray);
+            padding: 15px 20px;
+            border-radius: 18px 18px 18px 4px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .message.user .message-content {
+            background: #DCF8C6;
+            border-radius: 18px 18px 4px 18px;
+        }
+        
+        .message-content strong {
+            color: var(--dark-blue);
+        }
+        
         /* SEÇÕES COMUNS */
         section {
             padding: 100px 0;
@@ -229,7 +390,7 @@
             font-weight: 800;
             color: var(--dark-blue);
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 20px;
         }
         
         .section-subtitle {
@@ -415,45 +576,6 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         
-        /* FAQ */
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            background: white;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border: 1px solid var(--light-gray);
-        }
-        
-        .faq-question {
-            padding: 25px 30px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-            color: var(--dark-blue);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-answer {
-            padding: 0 30px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-        
-        .faq-answer.open {
-            padding: 0 30px 30px;
-            max-height: 500px;
-        }
-        
         /* FOOTER */
         footer {
             background: var(--dark-blue);
@@ -510,7 +632,7 @@
                 font-size: 36px;
             }
             
-            .section-title {
+            .section-title, .how-it-works h2, .main-cta h2 {
                 font-size: 32px;
             }
             
@@ -532,6 +654,14 @@
                 gap: 10px;
             }
             
+            .whatsapp-demo {
+                padding: 25px;
+            }
+            
+            .message {
+                max-width: 90%;
+            }
+            
             section {
                 padding: 60px 0;
             }
@@ -542,12 +672,24 @@
                 font-size: 28px;
             }
             
-            .section-title {
+            .section-title, .how-it-works h2, .main-cta h2 {
                 font-size: 26px;
             }
             
-            .document-card, .testimonial-card {
+            .logo-main {
+                font-size: 22px;
+            }
+            
+            .logo-sub {
+                font-size: 10px;
+            }
+            
+            .document-card, .testimonial-card, .step {
                 padding: 30px 20px;
+            }
+            
+            .whatsapp-demo {
+                padding: 20px;
             }
         }
     </style>
@@ -599,6 +741,118 @@
                 <a href="#documentos" class="btn btn-secondary">
                     <i class="fas fa-file-contract"></i> VER DOCUMENTOS DISPONÍVEIS
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção "Como Funciona" RESTAURADA -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <h2>Como funciona o Legal Bot?</h2>
+            <p class="how-it-works-subtitle">Simples, rápido e seguro. Em 4 passos você tem seu documento.</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>1. Adicione no WhatsApp</h3>
+                    <p>Salve nosso número nos seus contatos e mande um "Oi"</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3>2. Converse com o Bot</h3>
+                    <p>Digite que documento precisa e responda perguntas simples</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>3. Receba em PDF</h3>
+                    <p>Em menos de 2 minutos você recebe o documento pronto</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>4. Use com segurança</h3>
+                    <p>Todos os documentos têm cláusulas essenciais e atualizadas</p>
+                </div>
+            </div>
+            
+            <!-- Demonstração do WhatsApp RESTAURADA -->
+            <div class="whatsapp-demo">
+                <div class="demo-header">
+                    <div class="demo-avatar">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="demo-title">
+                        <h3>Demonstração da Conversa</h3>
+                        <p>Veja como é fácil conversar com o Legal Bot</p>
+                    </div>
+                </div>
+                
+                <div class="demo-messages">
+                    <div class="message bot">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <strong>Legal Bot:</strong> Olá! Sou o Legal Bot 🤖⚖️. Para qual documento você precisa?
+                        </div>
+                    </div>
+                    
+                    <div class="message user">
+                        <div class="message-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="message-content">
+                            <strong>Você:</strong> Preciso de um contrato de prestação de serviços
+                        </div>
+                    </div>
+                    
+                    <div class="message bot">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <strong>Legal Bot:</strong> Perfeito! Me conta:<br>
+                            1. Qual seu nome completo?<br>
+                            2. Nome da sua empresa?<br>
+                            3. Valor do serviço?<br>
+                            4. Prazo de entrega?
+                        </div>
+                    </div>
+                    
+                    <div class="message user">
+                        <div class="message-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="message-content">
+                            <strong>Você:</strong> João Silva<br>
+                            JS Consultoria<br>
+                            5.000 reais<br>
+                            30 dias
+                        </div>
+                    </div>
+                    
+                    <div class="message bot">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <strong>Legal Bot:</strong> ✅ Contrato gerado com sucesso!<br>
+                            📄 <strong>CONTRATO DE PRESTAÇÃO DE SERVIÇOS</strong><br>
+                            📥 <em>Baixe seu contrato aqui: [LINK PARA PDF]</em><br>
+                            💳 Custo: R$ 9,90 (PAGAR via PIX)
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -814,19 +1068,8 @@
         </div>
     </footer>
 
-    <!-- Font Awesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    
     <script>
-        // FAQ Toggle
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                answer.classList.toggle('open');
-            });
-        });
-
-        // Scroll suave
+        // Scroll suave para âncoras
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -845,11 +1088,10 @@
 
         // Atualizar ano no footer
         document.addEventListener('DOMContentLoaded', function() {
-            const yearElements = document.querySelectorAll('#currentYear');
-            const currentYear = new Date().getFullYear();
-            yearElements.forEach(el => {
-                el.textContent = currentYear;
-            });
+            const yearElement = document.querySelector('#currentYear');
+            if(yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
         });
     </script>
 </body>
