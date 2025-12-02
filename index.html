@@ -4,175 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Meta Tags Essenciais SEO -->
+    <!-- Meta Tags SEO -->
     <title>Legal Bot • Documentos Jurídicos em 2 minutos via WhatsApp</title>
     <meta name="description" content="Contratos, procurações, termos jurídicos em 2 minutos via WhatsApp. R$ 9,90 por documento. Ideal para freelancers, MEIs e microempresas.">
     <meta name="keywords" content="contrato jurídico, documento jurídico, contrato online, NDA, contrato prestação serviços, advogado whatsapp, contrato rápido, modelo contrato, contrato PJ, documento rápido">
     <meta name="author" content="Legal Bot">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://legalbot.com.br">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://legalbot.com.br">
-    <meta property="og:title" content="Legal Bot • Documentos Jurídicos em 2 minutos via WhatsApp">
-    <meta property="og:description" content="Contratos, procurações, termos jurídicos em 2 minutos via WhatsApp. R$ 9,90 por documento.">
-    <meta property="og:image" content="https://legalbot.com.br/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://legalbot.com.br">
-    <meta property="twitter:title" content="Legal Bot • Documentos Jurídicos em 2 minutos via WhatsApp">
-    <meta property="twitter:description" content="Contratos, procurações, termos jurídicos em 2 minutos via WhatsApp. R$ 9,90 por documento.">
-    <meta property="twitter:image" content="https://legalbot.com.br/twitter-image.jpg">
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#25d366">
-    <meta name="msapplication-TileColor" content="#25d366">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
     
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Legal Bot",
-        "description": "Documentos jurídicos em 2 minutos via WhatsApp",
-        "url": "https://legalbot.com.br",
-        "logo": "https://legalbot.com.br/logo.png",
-        "priceRange": "R$9,90 - R$19,90",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "São Paulo",
-            "addressRegion": "SP",
-            "addressCountry": "BR"
-        },
-        "offers": {
-            "@type": "Offer",
-            "name": "Contrato de Prestação de Serviços",
-            "price": "9.90",
-            "priceCurrency": "BRL",
-            "availability": "https://schema.org/InStock"
-        }
-    }
-    </script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        /* RESET COMPLETO - CORREÇÃO DOS PROBLEMAS */
+        /* RESET COMPLETO */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
         
-        /* Garantir que não haja texto vazando */
-        body:before, body:after, 
-        header:before, header:after,
-        .container:before, .container:after {
-            display: none !important;
-            content: none !important;
-        }
-        
-        :root {
-            --primary: #25D366;
-            --primary-dark: #128C7E;
-            --primary-light: #dcf8c6;
-            --secondary: #1A365D;
-            --secondary-light: #2D4A7C;
-            --accent: #FF6B35;
-            --accent-light: #FF9E75;
-            --light: #F8FAFC;
-            --dark: #1E293B;
-            --gray: #64748B;
-            --gray-light: #E2E8F0;
-            --shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-            --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.12);
-            --radius: 16px;
-            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
         }
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.7;
-            color: var(--dark);
-            background-color: var(--light);
-            overflow-x: hidden;
-            font-weight: 400;
-            position: relative;
+            line-height: 1.6;
+            color: #1E293B;
+            background-color: #F8FAFC;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
-        /* Remover qualquer conteúdo gerado */
-        body > *:not(header):not(section):not(footer):not(script) {
-            display: none;
+        /* VARIÁVEIS */
+        :root {
+            --whatsapp-green: #25D366;
+            --whatsapp-dark: #128C7E;
+            --dark-blue: #1A365D;
+            --medium-blue: #2D4A7C;
+            --light-gray: #E2E8F0;
+            --medium-gray: #64748B;
+            --white: #FFFFFF;
         }
         
-        h1, h2, h3, h4, h5 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
-        }
-        
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            color: var(--secondary);
-        }
-        
-        h1 span {
-            color: var(--primary);
-        }
-        
-        h2 {
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            color: var(--secondary);
-        }
-        
-        h3 {
-            font-size: clamp(1.5rem, 3vw, 2.2rem);
-        }
-        
-        p {
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            margin-bottom: 1.5rem;
-            color: var(--gray);
-        }
-        
+        /* CONTAINER */
         .container {
             width: 100%;
-            max-width: 1280px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
-            position: relative;
+            padding: 0 20px;
         }
         
-        /* HEADER CORRIGIDO */
+        /* HEADER */
         header {
-            background-color: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
         }
         
-        .header-container {
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 24px;
-            position: relative;
         }
         
         .logo {
@@ -180,277 +79,519 @@
             align-items: center;
             gap: 12px;
             text-decoration: none;
-            z-index: 1001;
         }
         
         .logo-icon {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            width: 50px;
-            height: 50px;
-            border-radius: 14px;
+            background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-dark));
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 1.8rem;
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            font-size: 24px;
         }
         
         .logo-text {
             display: flex;
             flex-direction: column;
+        }
+        
+        .logo-main {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 24px;
+            color: var(--dark-blue);
             line-height: 1;
         }
         
-        .logo-text .main {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: var(--secondary);
-        }
-        
-        .logo-text .sub {
-            font-size: 0.7rem;
+        .logo-sub {
+            font-size: 11px;
             font-weight: 600;
-            color: var(--primary);
+            color: var(--whatsapp-green);
             letter-spacing: 1px;
-            margin-top: 2px;
+            margin-top: 3px;
         }
         
-        /* MENU NAV CORRIGIDO */
-        .nav-links {
+        /* NAVEGAÇÃO */
+        .nav-desktop {
             display: flex;
             gap: 40px;
             align-items: center;
         }
         
-        .nav-links a {
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+        }
+        
+        .nav-desktop a {
             text-decoration: none;
-            color: var(--dark);
+            color: var(--dark-blue);
             font-weight: 600;
-            font-size: 1.05rem;
-            transition: var(--transition);
-            position: relative;
-            padding: 8px 0;
+            font-size: 16px;
+            transition: color 0.3s;
         }
         
-        .nav-links a:not(.btn):after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: var(--primary);
-            border-radius: 3px;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-links a:not(.btn):hover {
-            color: var(--primary);
-        }
-        
-        .nav-links a:not(.btn):hover:after {
-            width: 100%;
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            font-size: 1.8rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--dark);
-            padding: 8px;
-            border-radius: 8px;
-            transition: var(--transition);
-            z-index: 1001;
-        }
-        
-        /* MOBILE NAV CORRIGIDO */
-        .mobile-nav {
-            display: none;
-            position: fixed;
-            top: 90px;
-            left: 0;
-            width: 100%;
-            background-color: white;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            flex-direction: column;
-            gap: 25px;
-            z-index: 999;
-            transform: translateY(-100%);
-            opacity: 0;
-            transition: all 0.4s ease;
-        }
-        
-        .mobile-nav.open {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        
-        .mobile-nav a {
-            padding: 15px 0;
-            font-size: 1.2rem;
-            border-bottom: 1px solid var(--gray-light);
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 600;
-        }
-        
-        .mobile-nav a:last-child {
-            border-bottom: none;
+        .nav-desktop a:hover {
+            color: var(--whatsapp-green);
         }
         
         /* BOTÕES */
         .btn {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 20px 40px;
-            border-radius: var(--radius);
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: 'Poppins', sans-serif;
             font-weight: 700;
-            font-size: 1.125rem;
-            text-align: center;
-            cursor: pointer;
-            transition: var(--transition);
+            font-size: 16px;
+            transition: all 0.3s;
             border: none;
-            outline: none;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            min-width: 240px;
+            cursor: pointer;
         }
         
         .btn-whatsapp {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-dark));
             color: white;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
         }
         
         .btn-whatsapp:hover {
-            transform: translateY(-6px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
         }
         
-        /* HERO SECTION CORRIGIDA */
+        .btn-secondary {
+            background: white;
+            color: var(--dark-blue);
+            border: 2px solid var(--light-gray);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--whatsapp-green);
+            color: var(--whatsapp-green);
+        }
+        
+        /* HERO */
         .hero {
-            padding: 180px 24px 120px;
+            padding: 180px 0 100px;
             background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 900px;
-            margin: 0 auto;
             text-align: center;
         }
         
-        /* Restante do CSS permanece igual ao anterior, mas garantindo fechamento correto */
-        /* ... (o restante do CSS do código anterior continua aqui) ... */
-        
-        /* ANIMAÇÕES */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+            line-height: 1.2;
         }
         
-        .fade-in {
-            animation: fadeIn 0.8s ease forwards;
+        .hero h1 span {
+            color: var(--whatsapp-green);
         }
         
-        .delay-1 { animation-delay: 0.2s; opacity: 0; }
-        .delay-2 { animation-delay: 0.4s; opacity: 0; }
-        .delay-3 { animation-delay: 0.6s; opacity: 0; }
-        .delay-4 { animation-delay: 0.8s; opacity: 0; }
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--medium-gray);
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        
+        .hero-subtitle strong {
+            color: var(--dark-blue);
+            font-weight: 700;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+        
+        /* SEÇÕES COMUNS */
+        section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--dark-blue);
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--medium-gray);
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        /* DOCUMENTOS */
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .document-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--light-gray);
+        }
+        
+        .document-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        
+        .document-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+        
+        .document-description {
+            color: var(--medium-gray);
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        
+        .document-price {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--whatsapp-green);
+            margin: 25px 0;
+        }
+        
+        .document-price .small {
+            font-size: 16px;
+            color: var(--medium-gray);
+            font-weight: 600;
+        }
+        
+        .document-features {
+            list-style: none;
+            margin: 25px 0 35px;
+        }
+        
+        .document-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--light-gray);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--medium-gray);
+        }
+        
+        .document-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .document-features li i {
+            color: var(--whatsapp-green);
+        }
+        
+        /* DEPOIMENTOS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid var(--light-gray);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--medium-gray);
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .testimonial-text:before {
+            content: "❝";
+            font-size: 40px;
+            color: var(--whatsapp-green);
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            opacity: 0.3;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .author-info h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            color: var(--dark-blue);
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--medium-gray);
+            font-size: 14px;
+        }
+        
+        /* CTA PRINCIPAL */
+        .main-cta {
+            background: linear-gradient(135deg, var(--dark-blue), var(--medium-blue));
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .main-cta h2 {
+            color: white;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .main-cta p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .whatsapp-number {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            color: var(--dark-blue);
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 28px;
+            font-weight: 800;
+            margin: 40px 0;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--light-gray);
+        }
+        
+        .faq-question {
+            padding: 25px 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--dark-blue);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-answer.open {
+            padding: 0 30px 30px;
+            max-height: 500px;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            padding: 80px 0 40px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-column h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: white;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-column a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-column a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
         
         /* RESPONSIVIDADE */
-        @media (max-width: 992px) {
-            .nav-links {
-                display: none;
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
             }
             
-            .mobile-menu-btn {
-                display: block;
+            .section-title {
+                font-size: 32px;
             }
             
-            .mobile-nav {
-                display: flex;
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .whatsapp-number {
+                font-size: 20px;
+                padding: 15px 25px;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            section {
+                padding: 60px 0;
             }
         }
         
-        @media (max-width: 768px) {
-            .hero {
-                padding: 150px 24px 80px;
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
             }
             
-            .container {
-                padding: 0 20px;
+            .section-title {
+                font-size: 26px;
+            }
+            
+            .document-card, .testimonial-card {
+                padding: 30px 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (opcional) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
     <!-- Header -->
     <header>
-        <div class="header-container container">
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="logo-text">
-                    <div class="main">Legal Bot</div>
-                    <div class="sub">ADVOGADO NO WHATSAPP</div>
-                </div>
-            </a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="nav-links" aria-label="Navegação principal">
-                <a href="#como-funciona">Como Funciona</a>
-                <a href="#documentos">Documentos</a>
-                <a href="#depoimentos">Depoimentos</a>
-                <a href="#faq">Perguntas</a>
-                <a href="https://wa.me/5511999999999?text=Olá%20Legal%20Bot%2C%20quero%20conhecer%20seus%20documentos" 
-                   target="_blank" class="btn btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i> Falar Agora
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-main">Legal Bot</div>
+                        <div class="logo-sub">ADVOGADO NO WHATSAPP</div>
+                    </div>
                 </a>
-            </nav>
-        </div>
-        
-        <!-- Menu Mobile -->
-        <div class="mobile-nav" id="mobileNav">
-            <a href="#como-funciona">Como Funciona</a>
-            <a href="#documentos">Documentos e Preços</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#faq">Perguntas Frequentes</a>
-            <a href="https://wa.me/5511999999999?text=Olá%20Legal%20Bot%2C%20quero%20conhecer%20seus%20documentos" 
-               target="_blank" class="btn btn-whatsapp">
-                <i class="fab fa-whatsapp"></i> Falar com o Bot
-            </a>
+                
+                <nav class="nav-desktop">
+                    <a href="#como-funciona">Como Funciona</a>
+                    <a href="#documentos">Documentos</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#faq">Perguntas</a>
+                    <a href="https://wa.me/5511999999999?text=Olá%20Legal%20Bot%2C%20quero%20conhecer%20seus%20documentos" 
+                       target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Falar Agora
+                    </a>
+                </nav>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content container">
-            <h1 class="fade-in">Documentos jurídicos em <span>2 minutos</span> diretamente no seu WhatsApp</h1>
+        <div class="container">
+            <h1>Documentos jurídicos em <span>2 minutos</span><br>diretamente no seu WhatsApp</h1>
             
-            <p class="hero-subtitle fade-in delay-1">
+            <p class="hero-subtitle">
                 Contratos, procurações, termos e muito mais. Sem advogado caro, sem burocracia. 
                 <strong>Como perguntar para um amigo, mas com a segurança de um sistema jurídico.</strong>
             </p>
             
-            <div class="hero-cta fade-in delay-2">
+            <div class="hero-buttons">
                 <a href="https://wa.me/5511999999999?text=Olá%20Legal%20Bot%2C%20quero%20conhecer%20seus%20documentos" 
                    target="_blank" class="btn btn-whatsapp">
                     <i class="fab fa-whatsapp"></i> FALAR COM O LEGAL BOT AGORA
@@ -462,62 +603,15 @@
         </div>
     </section>
 
-    <!-- Como Funciona -->
-    <section class="how-it-works" id="como-funciona">
-        <div class="container">
-            <h2 class="section-title fade-in">Como funciona o Legal Bot?</h2>
-            <p class="subtitle text-center fade-in delay-1">Simples, rápido e seguro. Em 4 passos você tem seu documento.</p>
-            
-            <div class="steps">
-                <div class="step fade-in delay-1">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <h3>Adicione no WhatsApp</h3>
-                    <p>Salve nosso número nos seus contatos e mande um "Oi"</p>
-                </div>
-                
-                <div class="step fade-in delay-2">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">
-                        <i class="fas fa-comment-dots"></i>
-                    </div>
-                    <h3>Converse com o Bot</h3>
-                    <p>Digite que documento precisa e responda perguntas simples</p>
-                </div>
-                
-                <div class="step fade-in delay-3">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <h3>Receba em PDF</h3>
-                    <p>Em menos de 2 minutos você recebe o documento pronto</p>
-                </div>
-                
-                <div class="step fade-in delay-4">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Use com segurança</h3>
-                    <p>Todos os documentos têm cláusulas essenciais e atualizadas</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Documentos e Preços -->
+    <!-- Documentos -->
     <section class="documents" id="documentos">
         <div class="container">
-            <h2 class="section-title fade-in">Documentos mais pedidos</h2>
-            <p class="subtitle text-center fade-in delay-1">Modelos jurídicos prontos para usar. Comece por apenas R$ 9,90.</p>
+            <h2 class="section-title">Documentos mais pedidos</h2>
+            <p class="section-subtitle">Modelos jurídicos prontos para usar. Comece por apenas R$ 9,90.</p>
             
-            <div class="document-grid">
-                <!-- Documento 1 - Mais Popular -->
-                <div class="document-card popular fade-in">
-                    <div class="popular-badge">MAIS PEDIDO</div>
+            <div class="documents-grid">
+                <!-- Documento 1 -->
+                <div class="document-card">
                     <h3>Contrato de Prestação de Serviços</h3>
                     <p class="document-description">Ideal para freelancers, consultores e empresas que prestam serviços.</p>
                     
@@ -534,13 +628,13 @@
                     </ul>
                     
                     <a href="https://wa.me/5511999999999?text=Quero%20o%20Contrato%20de%20Prestação%20de%20Serviços%20por%20R$%209,90" 
-                       target="_blank" class="btn btn-whatsapp">
+                       target="_blank" class="btn btn-whatsapp" style="width: 100%;">
                         <i class="fab fa-whatsapp"></i> PEDIR AGORA
                     </a>
                 </div>
                 
                 <!-- Documento 2 -->
-                <div class="document-card fade-in delay-1">
+                <div class="document-card">
                     <h3>Contrato de Confidencialidade (NDA)</h3>
                     <p class="document-description">Proteja informações sigilosas em negociações e parcerias.</p>
                     
@@ -556,13 +650,13 @@
                     </ul>
                     
                     <a href="https://wa.me/5511999999999?text=Quero%20o%20Contrato%20de%20Confidencialidade%20(NDA)%20por%20R$%209,90" 
-                       target="_blank" class="btn btn-secondary">
+                       target="_blank" class="btn btn-secondary" style="width: 100%;">
                         <i class="fab fa-whatsapp"></i> PEDIR AGORA
                     </a>
                 </div>
                 
                 <!-- Documento 3 -->
-                <div class="document-card fade-in delay-2">
+                <div class="document-card">
                     <h3>Contrato de Trabalho PJ</h3>
                     <p class="document-description">Para contratar prestadores de serviço (PJ) com segurança.</p>
                     
@@ -579,55 +673,29 @@
                     </ul>
                     
                     <a href="https://wa.me/5511999999999?text=Quero%20o%20Contrato%20de%20Trabalho%20PJ%20por%20R$%209,90" 
-                       target="_blank" class="btn btn-secondary">
+                       target="_blank" class="btn btn-secondary" style="width: 100%;">
                         <i class="fab fa-whatsapp"></i> PEDIR AGORA
                     </a>
                 </div>
             </div>
             
-            <div class="text-center mt-40 fade-in delay-3">
+            <div style="text-align: center; margin-top: 50px;">
                 <a href="https://wa.me/5511999999999?text=Quero%20ver%20todos%20os%20documentos%20disponíveis" 
-                   target="_blank" class="btn btn-secondary" style="min-width: 300px;">
+                   target="_blank" class="btn btn-secondary">
                     <i class="fas fa-list"></i> VER TODOS OS 20+ DOCUMENTOS
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Principal -->
-    <section class="main-cta" id="contato">
-        <div class="container">
-            <h2 class="fade-in">Comece agora mesmo!</h2>
-            <p class="fade-in delay-1">Adicione o Legal Bot no seu WhatsApp e tenha documentos jurídicos sempre à mão. Sem cadastro, sem complicação.</p>
-            
-            <div class="whatsapp-number fade-in delay-2">
-                <i class="fab fa-whatsapp"></i>
-                <span>+55 (11) 99999-9999</span>
-            </div>
-            
-            <p class="fade-in delay-2" style="margin-bottom: 30px;">
-                <strong>Clique no botão abaixo para abrir direto no WhatsApp:</strong>
-            </p>
-            
-            <a href="https://wa.me/5511999999999?text=Olá%20Legal%20Bot%2C%20quero%20conhecer%20seus%20documentos" 
-               target="_blank" class="btn btn-whatsapp fade-in delay-3" style="font-size: 1.3rem; padding: 22px 45px;">
-                <i class="fab fa-whatsapp"></i> FALAR COM O LEGAL BOT AGORA
-            </a>
-            
-            <p style="margin-top: 40px; opacity: 0.8; font-size: 0.95rem;" class="fade-in delay-4">
-                <i class="fas fa-lock"></i> Sua conversa é privada e segura. Não compartilhamos seus dados.
-            </p>
-        </div>
-    </section>
-
     <!-- Depoimentos -->
     <section class="testimonials" id="depoimentos">
         <div class="container">
-            <h2 class="section-title fade-in">O que dizem nossos usuários</h2>
-            <p class="subtitle text-center fade-in delay-1">Mais de 1.000 documentos já gerados com satisfação</p>
+            <h2 class="section-title">O que dizem nossos usuários</h2>
+            <p class="section-subtitle">Mais de 1.000 documentos já gerados com satisfação</p>
             
-            <div class="testimonial-grid">
-                <div class="testimonial-card fade-in">
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
                     <div class="testimonial-text">
                         "Como freelancer, preciso de contratos rápidos para cada cliente. O Legal Bot salvou meu tempo e dinheiro. Em 5 minutos tenho um contrato profissional."
                     </div>
@@ -640,7 +708,7 @@
                     </div>
                 </div>
                 
-                <div class="testimonial-card fade-in delay-1">
+                <div class="testimonial-card">
                     <div class="testimonial-text">
                         "Minha pequena empresa não podia pagar R$ 2.000 em um contrato. Com o Legal Bot paguei R$ 9,90 e em minutos tinha um documento sério para fechar um serviço de R$ 15.000."
                     </div>
@@ -653,7 +721,7 @@
                     </div>
                 </div>
                 
-                <div class="testimonial-card fade-in delay-2">
+                <div class="testimonial-card">
                     <div class="testimonial-text">
                         "Já usei para contrato de prestação de serviços, NDA e até procuração. A facilidade de ser tudo pelo WhatsApp é incrível. Parece que você tem um advogado no bolso."
                     </div>
@@ -669,68 +737,25 @@
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="faq" id="faq">
+    <!-- CTA Principal -->
+    <section class="main-cta" id="contato">
         <div class="container">
-            <h2 class="section-title fade-in">Perguntas Frequentes</h2>
-            <p class="subtitle text-center fade-in delay-1">Tire suas dúvidas sobre o Legal Bot</p>
+            <h2>Comece agora mesmo!</h2>
+            <p>Adicione o Legal Bot no seu WhatsApp e tenha documentos jurídicos sempre à mão. Sem cadastro, sem complicação.</p>
             
-            <div class="faq-container">
-                <!-- FAQ 1 -->
-                <div class="faq-item fade-in">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        O Legal Bot substitui um advogado?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p><strong>Não.</strong> O Legal Bot é uma ferramenta para gerar documentos jurídicos básicos de forma rápida e acessível. Para questões complexas, consultas específicas ou revisão personalizada, recomendamos sempre a consulta com um advogado humano. Todos os nossos documentos incluem um disclaimer informando isso.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ 2 -->
-                <div class="faq-item fade-in delay-1">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Os documentos são válidos juridicamente?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p><strong>Sim.</strong> Todos os documentos são baseados em modelos jurídicos válidos no Brasil, com cláusulas essenciais para cada tipo de contrato. São desenvolvidos por advogados e atualizados conforme mudanças na legislação. No entanto, a validade final depende do preenchimento correto das informações e da adequação ao seu caso específico.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ 3 -->
-                <div class="faq-item fade-in delay-2">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Como é feito o pagamento?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>O pagamento é feito via <strong>PIX</strong> diretamente no WhatsApp. Após gerar seu documento, o Legal Bot enviará uma chave PIX para pagamento. Uma vez confirmado, você receberá imediatamente o PDF do documento. O processo todo leva menos de 3 minutos. Também aceitamos cartão de crédito.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ 4 -->
-                <div class="faq-item fade-in delay-3">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Posso personalizar o documento depois?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p><strong>Sim!</strong> Durante a conversa com o Legal Bot, você pode pedir para adicionar cláusulas específicas ou modificar partes do documento. Além disso, oferecemos um serviço de revisão por advogado humano por R$ 49,90 para personalizações mais complexas.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ 5 -->
-                <div class="faq-item fade-in delay-4">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        É seguro enviar meus dados pelo WhatsApp?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p><strong>Sim.</strong> O WhatsApp utiliza criptografia de ponta-a-ponta, o que significa que suas mensagens são privadas e só podem ser lidas por você e pelo Legal Bot. Além disso, não compartilhamos seus dados com terceiros e seguimos rigorosamente a LGPD (Lei Geral de Proteção de Dados).</p>
-                    </div>
-                </div>
-            </div>
+            <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-number">
+                <i class="fab fa-whatsapp"></i>
+                <span>+55 (11) 99999-9999</span>
+            </a>
+            
+            <p style="margin-bottom: 30px; font-size: 18px;">
+                <strong>Clique no botão abaixo para abrir direto no WhatsApp:</strong>
+            </p>
+            
+            <a href="https://wa.me/5511999999999?text=Olá%20Legal%20Bot%2C%20quero%20conhecer%20seus%20documentos" 
+               target="_blank" class="btn btn-whatsapp" style="font-size: 18px; padding: 20px 45px;">
+                <i class="fab fa-whatsapp"></i> FALAR COM O LEGAL BOT AGORA
+            </a>
         </div>
     </section>
 
@@ -739,27 +764,35 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <div class="footer-about">
-                        <a href="#" class="logo" style="color: white; margin-bottom: 25px;">
-                            <div class="logo-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="logo-text">
-                                <div class="main">Legal Bot</div>
-                                <div class="sub">ADVOGADO NO WHATSAPP</div>
-                            </div>
-                        </a>
-                        <p>Documentos jurídicos em 2 minutos, diretamente no seu WhatsApp. Simples, rápido e acessível.</p>
+                    <div class="logo" style="margin-bottom: 25px;">
+                        <div class="logo-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="logo-text">
+                            <div class="logo-main" style="color: white;">Legal Bot</div>
+                            <div class="logo-sub" style="color: var(--whatsapp-green);">ADVOGADO NO WHATSAPP</div>
+                        </div>
                     </div>
+                    <p style="color: rgba(255,255,255,0.8); max-width: 300px;">
+                        Documentos jurídicos em 2 minutos, diretamente no seu WhatsApp. Simples, rápido e acessível.
+                    </p>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Documentos Populares</h3>
                     <ul>
-                        <li><a href="https://wa.me/5511999999999?text=Quero%20Contrato%20de%20Prestação%20de%20Serviços"><i class="fas fa-chevron-right"></i> Contrato de Prestação de Serviços</a></li>
-                        <li><a href="https://wa.me/5511999999999?text=Quero%20Contrato%20de%20Confidencialidade"><i class="fas fa-chevron-right"></i> Contrato de Confidencialidade (NDA)</a></li>
-                        <li><a href="https://wa.me/5511999999999?text=Quero%20Contrato%20de%20Trabalho%20PJ"><i class="fas fa-chevron-right"></i> Contrato de Trabalho PJ</a></li>
-                        <li><a href="https://wa.me/5511999999999?text=Quero%20Contrato%20de%20Locação"><i class="fas fa-chevron-right"></i> Contrato de Locação Residencial</a></li>
+                        <li><a href="https://wa.me/5511999999999?text=Quero%20Contrato%20de%20Prestação%20de%20Serviços">
+                            <i class="fas fa-chevron-right"></i> Contrato de Prestação de Serviços
+                        </a></li>
+                        <li><a href="https://wa.me/5511999999999?text=Quero%20Contrato%20de%20Confidencialidade">
+                            <i class="fas fa-chevron-right"></i> Contrato de Confidencialidade (NDA)
+                        </a></li>
+                        <li><a href="https://wa.me/5511999999999?text=Quero%20Contrato%20de%20Trabalho%20PJ">
+                            <i class="fas fa-chevron-right"></i> Contrato de Trabalho PJ
+                        </a></li>
+                        <li><a href="https://wa.me/5511999999999?text=Quero%20Contrato%20de%20Locação">
+                            <i class="fas fa-chevron-right"></i> Contrato de Locação Residencial
+                        </a></li>
                     </ul>
                 </div>
                 
@@ -772,57 +805,30 @@
                         <li><a href="#faq"><i class="fas fa-chevron-right"></i> Perguntas Frequentes</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-column">
-                    <h3>Jurídico</h3>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Termos de Uso</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Política de Privacidade</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Disclaimer Legal</a></li>
-                        <li><a href="#contato"><i class="fas fa-chevron-right"></i> Fale Conosco</a></li>
-                    </ul>
-                </div>
             </div>
             
             <div class="copyright">
-                <p>© <span id="currentYear">2023</span> Legal Bot. CNPJ: 12.345.678/0001-99 • São Paulo - SP</p>
-                <p style="margin-top: 10px; font-size: 0.85rem;">Este serviço não substitui aconselhamento jurídico profissional.</p>
+                <p>© 2025 Legal Bot. CNPJ: 12.345.678/0001-99 • São Paulo - SP</p>
+                <p style="margin-top: 10px;">Este serviço não substitui aconselhamento jurídico profissional.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    
     <script>
-        // Menu Mobile
-        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
-            const mobileNav = document.getElementById('mobileNav');
-            mobileNav.classList.toggle('open');
-            this.innerHTML = mobileNav.classList.contains('open') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.mobile-nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('mobileNav').classList.remove('open');
-                document.getElementById('mobileMenuBtn').innerHTML = '<i class="fas fa-bars"></i>';
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('open');
             });
         });
 
-        // FAQ Toggle
-        function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const toggle = element.querySelector('.faq-toggle');
-            
-            answer.classList.toggle('open');
-            toggle.textContent = answer.classList.contains('open') ? '−' : '+';
-        }
-
-        // Scroll suave para âncoras
+        // Scroll suave
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                if(this.getAttribute('href') === '#') return;
-                
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 if(targetId === '#') return;
@@ -838,44 +844,13 @@
         });
 
         // Atualizar ano no footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // SEO - Estrutura de dados para rich snippets
-        const structuredData = {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Legal Bot",
-            "description": "Documentos jurídicos em 2 minutos via WhatsApp",
-            "provider": {
-                "@type": "Organization",
-                "name": "Legal Bot"
-            },
-            "areaServed": {
-                "@type": "Country",
-                "name": "Brazil"
-            },
-            "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Documentos Jurídicos",
-                "itemListElement": [
-                    {
-                        "@type": "Offer",
-                        "itemOffered": {
-                            "@type": "Service",
-                            "name": "Contrato de Prestação de Serviços"
-                        },
-                        "price": "9.90",
-                        "priceCurrency": "BRL"
-                    }
-                ]
-            }
-        };
-        
-        // Adicionar structured data ao DOM
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.text = JSON.stringify(structuredData);
-        document.head.appendChild(script);
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElements = document.querySelectorAll('#currentYear');
+            const currentYear = new Date().getFullYear();
+            yearElements.forEach(el => {
+                el.textContent = currentYear;
+            });
+        });
     </script>
 </body>
 </html>
